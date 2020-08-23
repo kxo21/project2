@@ -1,31 +1,32 @@
-/* Color List:
-orange = #ff751a
-
-*/
-
-
 body {
-    background-color: #ff751a;
-    font-family: 'Bangers', cursive;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-    
-  }
-  
-  .searchbox {
-      width: 100%;
-      text-align: center;
-
-  }
-
-  nav {
-    length: 2em;
-    padding: 2px;
-    text-align-last: auto;
+  background-color: #ff751a;
+  font-family: 'Bangers', cursive;
+  font-weight: 700;
+  letter-spacing: 0.15em;
 }
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.searchbox {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  length: 2em;
+  padding: 2px;
+  text-align-last: auto;
+  float: left;
+}
+
+.topnav {
+  margin-top: 28px;
+  float: right;
+  width: 60%;
+  text-align: right;
+  margin-top: 0px;
+}
+/*# sourceMappingURL=styles.css.map */
