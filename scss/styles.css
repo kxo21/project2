@@ -1,0 +1,23 @@
+body {
+  background-color: #ff751a;
+  font-family: 'Bangers', cursive;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.searchbox {
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  length: 2em;
+  padding: 2px;
+  text-align-last: auto;
+}
+/*# sourceMappingURL=styles.css.map */
