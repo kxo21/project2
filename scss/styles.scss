@@ -21,6 +21,8 @@ nav {
   padding: 2px;
   text-align-last: auto;
   float: left;
+  color: black;
+  
 }
 
 .topnav {
@@ -30,4 +32,10 @@ nav {
     text-align: right;
     margin-top: 0px;
 
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
 }
