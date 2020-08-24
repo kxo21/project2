@@ -1,0 +1,105 @@
+head, body {
+  background-color: #ff751a;
+  font-family: 'Bangers', cursive;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+#outputArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* ------- */
+/* Image styles */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+head, body {
+  font-family: 'Alata';
+  font-size: 22px;
+}
+
+/* Page Styling */
+head, body {
+  background-color: seashell;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+}
+
+
+/* Image styles */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.column {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+#outputArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* Form styles */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+
+form.fetch button:hover {
+  background: lightsalmon;
+}
+
+/* Clear floats */
+form.fetch::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* If the screen size is 320px wide or less */
+@media only screen and (max-width: 320px) {
+  body {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
