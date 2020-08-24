@@ -1,8 +1,20 @@
-head, body {
+body {
   background-color: #ff751a;
   font-family: 'Bangers', cursive;
   font-weight: 700;
   letter-spacing: 0.15em;
+}
+
+.container {
+  color: green;
+  font-family: 'Bangers', cursive;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+  color: green;
+  font-family: 'Bangers', cursive;
 }
 
 #outputArea {
@@ -13,7 +25,8 @@ head, body {
       flex-wrap: wrap;
 }
 
-/* ------- */
+
+
 /* Image styles */
 .row {
   display: -webkit-box;
@@ -27,23 +40,6 @@ head, body {
   margin-left: 5px;
   margin-right: 5px;
 }
-
-head, body {
-  font-family: 'Alata';
-  font-size: 22px;
-}
-
-/* Page Styling */
-head, body {
-  background-color: seashell;
-}
-
-footer {
-  font-size: small;
-  text-align: center;
-}
-
-
 /* Image styles */
 .row {
   display: -webkit-box;
@@ -66,14 +62,6 @@ footer {
   padding: 0 4px;
 }
 
-#outputArea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 /* Form styles */
 .centered {
   position: absolute;
@@ -81,6 +69,28 @@ footer {
   left: 40%;
 }
 
+/* Style the search field */
+form.fetch input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid black;
+  float: left;
+  width: 80%;
+  background: green;
+}
+
+/* Style the submit button */
+form.fetch button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: lightsalmon;
+  color: white;
+  font-size: 17px;
+  border: 1px solid black;
+  border-left: none;
+  cursor: pointer;
+}
 
 form.fetch button:hover {
   background: lightsalmon;
