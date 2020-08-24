@@ -2,7 +2,7 @@ body {
     background-color: #ff751a;
     font-family: 'Bangers', cursive;
     font-weight: 700;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.10em;
   }
 
 #outputArea {
@@ -13,12 +13,18 @@ body {
 footer {
     font-size: small;
     text-align: center;
-    color: #ff751a;
+    color: green;
     font-family: 'Bangers', cursive;
 }
 
 .container {
-    color: #ff751a;
+    color: green;
+    font-family: 'Bangers', cursive;
+
+}
+
+.nav-container {
+    color: green;
     font-family: 'Bangers', cursive;
 
 }

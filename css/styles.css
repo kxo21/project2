@@ -2,19 +2,7 @@ body {
   background-color: #ff751a;
   font-family: 'Bangers', cursive;
   font-weight: 700;
-  letter-spacing: 0.15em;
-}
-
-.container {
-  color: green;
-  font-family: 'Bangers', cursive;
-}
-
-footer {
-  font-size: small;
-  text-align: center;
-  color: green;
-  font-family: 'Bangers', cursive;
+  letter-spacing: 0.10em;
 }
 
 #outputArea {
@@ -25,7 +13,22 @@ footer {
       flex-wrap: wrap;
 }
 
+footer {
+  font-size: small;
+  text-align: center;
+  color: green;
+  font-family: 'Bangers', cursive;
+}
 
+.container {
+  color: green;
+  font-family: 'Bangers', cursive;
+}
+
+.nav-container {
+  color: green;
+  font-family: 'Bangers', cursive;
+}
 
 /* Image styles */
 .row {
@@ -40,6 +43,7 @@ footer {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 /* Image styles */
 .row {
   display: -webkit-box;
