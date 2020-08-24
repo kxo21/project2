@@ -1,36 +1,30 @@
-// check other info returned by the API ???
+$(document).ready(function(){
+    //tooltip settings
+    $('[data-toggle="tooltip"]').tooltip();   
 
-var $form = $("form");
-var $search = $(".search");
-var $clear = $(".clear");
-var $giphy = $(".giphy img");
-var $giphyLink = $(".giphy a");
-
-// launch function on form submit
-$form.on("submit", function(e) {
-  e.preventDefault();
-  goGiphy();
+    //ajax asynchronize call
+    console.log("document ready...");
+    $('#submit').click(function() {
+        var url = "http://api.giphy.com/v1/gifs/search";
+        var data = $('#myForm').serialize();
+        console.log(data);
+        $.ajax( {
+            type: "GET",
+            url: url,
+            data: data,
+            success: function(data) {
+                console.log("received data");
+                var output = "";
+                $.each(data.data, function (key, obj) { 
+                    //id, type, and url converted to variables
+                    var id = obj.id;
+                    var type = obj.type;
+                    var imgSrc = "https://media2.giphy.com/media/"+obj.id+"/giphy."+obj.type; //feed url + id + type
+                    output += "<div><img class='answer d-flex height='50' width='auto'' src='"+imgSrc+"' /></div>\n" //create output and assign img tag for gifs
+                });
+                console.log(output);
+                $("#outputArea").html(output); //get output
+            }
+        });
+    });
 });
-
-// clear input on click
-$clear.on("click", function() {
-  $search.val("");
-})
-
-function goGiphy() {
-  var input = $search.val();
-  // Ajax call to giphy API  
-  $.getJSON("https://api.giphy.com/v1/gifs/translate?api_key=RR1OGkub5crm1stoyeJnkHyiNFqjapCn=" + input, function(json) {
-    data = JSON.parse(JSON.stringify(json));
-    imgSrc = data.data.images.original.url;
-    $giphy.fadeOut(1000);
-    setTimeout( function() {
-      $giphy.attr("src", imgSrc);
-      $giphyLink.attr("href", imgSrc);
-      setTimeout( function() {
-        $giphy.addClass("gif");
-        $giphy.fadeIn(1000);
-      }, 800);
-    }, 800);
-  })
-}
