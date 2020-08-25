@@ -25,9 +25,6 @@ footer {
   font-family: 'Bangers', cursive;
 }
 
-.nav-container {
-  color: green;
-  font-family: 'Bangers', cursive;
 }
 
 /* Image styles */
@@ -42,69 +39,6 @@ footer {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
-}
-
-/* Image styles */
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0 4px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.column {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-/* Form styles */
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-}
-
-/* Style the search field */
-form.fetch input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid black;
-  float: left;
-  width: 80%;
-  background: green;
-}
-
-/* Style the submit button */
-form.fetch button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: lightsalmon;
-  color: white;
-  font-size: 17px;
-  border: 1px solid black;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.fetch button:hover {
-  background: lightsalmon;
-}
-
-/* Clear floats */
-form.fetch::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* If the screen size is 320px wide or less */
