@@ -48,10 +48,10 @@
                         </ul>
                         <!--In-Line Searchbox Starts Here-->
                         <form class="form-inline" id="myForm">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search GIFit!"
+                            <input class="form-control mr-sm-2" id="searchtext" type="search" placeholder="Search GIFit!"
                                 aria-label="Search">
                             <input type="hidden" name="api_key" value="RR1OGkub5crm1stoyeJnkHyiNFqjapCn" />
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                            <button class="btn btn-outline-success my-2 my-sm-0" id="btnSearch" type="button">Search</button>
                             <button type="button" class="btn" id="submit" data-toggle="tooltip" title="Search Away!"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
@@ -74,21 +74,14 @@
             <div class="col-12 child" id="outputArea"></div>
         </div>
     </div>
-
-
-
-
-    
         
         <footer class="fixed-bottom">
             POWERED BY GIPHY<!--Insert GIPHY Logo img src-->
         </footer>
 
         <!-- Link to: Boostrap, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
             integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
