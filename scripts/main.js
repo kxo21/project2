@@ -33,10 +33,10 @@ $('#btnSearch').click(function (){
 var input = $('#searchtext').val();
     
 
-    $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=RR1OGkub5crm1stoyeJnkHyiNFqjapCn&limit=5', function(response) {
+    $.get('http://api.giphy.com/v1/gifs/search?q='+input+'&api_key=RR1OGkub5crm1stoyeJnkHyiNFqjapCn&limit=20', function(response) {
         for(i =0; i < response.data.length; i++)
         {  
-          output += "<div><img class='answer d-flex height='50' width='auto'' src="+response.data[i].images.downsized_large.url+" /></div>\n" //create output and assign img tag for gifs
+          output += "<div><img class='answer d-flex height='100' width='100'' src="+response.data[i].images.downsized_large.url+" /></div>\n" //create output and assign img tag for gifs
         }
       })
       $("#outputArea").html(output); //get output

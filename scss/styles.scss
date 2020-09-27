@@ -8,6 +8,9 @@ body {
 #outputArea {
     display: flex;
     flex-wrap: wrap;
+    width: auto;
+    height: fit-content;;
+    
 }
 
 footer {
